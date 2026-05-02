@@ -1,0 +1,4 @@
+**/*.DS_Store
+/target
+/typst-package/typst-mermaid.wasm
+README.pdf

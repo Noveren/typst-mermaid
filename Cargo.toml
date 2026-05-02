@@ -1,0 +1,29 @@
+[package]
+name = "typst-mermaid"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-minimal-protocol = "0.1.0"
+
+[dependencies.mermaid-rs-renderer]
+# path = "../mermaid-rs-renderer"
+git = "https://github.com/Noveren/mermaid-rs-renderer.git"
+# branch = "dev"
+default-features = false
+features = []
+
+[profile.dev]
+opt-level = "z"
+panic = "abort"
+strip = true
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
