@@ -101,7 +101,7 @@ dependencies = [
 [[package]]
 name = "mermaid-rs-renderer"
 version = "0.2.2"
-source = "git+https://github.com/Noveren/mermaid-rs-renderer.git#ff24c606016e6a324b99cea3694454f191957b39"
+source = "git+https://github.com/Noveren/mermaid-rs-renderer.git#a8e432424dd502cff9df58ca5b3750bbda76368c"
 dependencies = [
  "anyhow",
  "fontdb",

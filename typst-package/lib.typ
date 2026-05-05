@@ -13,6 +13,7 @@
   } else {
     assert(false, message: "body must be a `str` or `raw` containing Mermaid diagram syntax",)
   };
+  assert(type(text) == str)
   let svg = p.render(bytes(text));
   align(alignment, image(svg, format: "svg", width: width, height: height))
 }

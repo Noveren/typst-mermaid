@@ -64,17 +64,9 @@ flowchart LR
 ```
 
 ```mermaid
-```
-
-```mermaid
-```
-
-```mermaid
-```
-
-```mermaid
 flowchart LR
-  A -->|text| B
+  A -->|文本| B
+  B -->|text| C
 ```
 
 ```mermaid
